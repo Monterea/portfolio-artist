@@ -11,9 +11,7 @@ export const Navi = styled.nav`
   margin: auto;
   position: fixed;
   z-index: 10;
-  justify-content: space-between;
-  align-items: center;
-  background-color: ${palette.darkBlue}; //
+  background-color: ${palette.darkPurple}; //
   @media (max-width: 500px) {
     display: none;
   }
@@ -21,7 +19,7 @@ export const Navi = styled.nav`
 export const MenuList = styled.ul`
   list-style: none;
   display: flex;
-  width: 40%;
+  width: 80%;
   justify-content: flex-end;
   align-items: center;
   @media (max-width: 500px) {
@@ -58,7 +56,7 @@ export const MenuLink = styled(Link)`
     ${(props) => {
       if (props.className === "selected-page") {
         return `
-			color: ${palette.darkBlue};
+			color: ${palette.darkPurple};
 			`;
       }
     }}
@@ -73,43 +71,8 @@ export const MenuLink = styled(Link)`
     }
   }
 `;
-export const BrandName = styled.div`
-  width: 60%;
-  margin-left: 50px;
-  @media (max-width: 680px) {
-    justify-self: flex-start;
-    margin-left: 20px;
-    width: 70%;
-  }
-  @media (max-width: 650px) {
-    width: 85%;
-  }
-  @media (max-width: 505px) {
-    width: 50%;
-  }
-`;
-export const BrandNameH2 = styled.h2`
-  font-size: 40px;
-  font-weight: bold;
-  flex-wrap: nowrap;
-  color: ${palette.white};
-  text-shadow: 5px 5px 10px ${palette.gold}; //
-  @media (max-width: 1240px) {
-    font-size: 35px;
-  }
-  @media (max-width: 850px) {
-    font-size: 30px;
-  }
-  @media (max-width: 650px) {
-    font-size: 28px;
-  }
-  @media (max-width: 550px) {
-    font-size: 24px;
-  }
-  @media (max-width: 505px) {
-    display: none;
-  }
-`;
+
+
 //END OF DESKTOP VERSION
 
 //MOBILE VERSION
@@ -122,7 +85,7 @@ export const MobNavi = styled.nav`
   justify-content: space-between;
   align-items: center;
   display: none;
-  background-color: ${palette.darkBlue}; //
+  background-color: ${palette.darkPurple}; //
   @media (max-width: 500px) {
     display: flex;
     font-size: 18px;
@@ -147,7 +110,7 @@ export const MobMenuList = styled.ul`
   height: 40vh;
   width: 100%;
   padding-bottom: 20px;
-  background-color: ${palette.darkBlue};
+  background-color: ${palette.darkPurple};
   z-index: 9;
 `;
 export const MobMenuItem = styled.li`

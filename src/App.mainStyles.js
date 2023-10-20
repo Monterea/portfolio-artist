@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import landingPageBackground from "./assets/pictures/landingPage/landingPageBackground.jpg";
+import landingPageBackground from "./assets/pictures/landingPage/pirka.jpg";
 import retro from "../src/assets/pictures/landingPage/retro.png";
 
 //COLOR SCHEME
@@ -17,6 +17,8 @@ export const whiteOp03 = "rgba(255,255,255,0.3)";
 export const whiteOp = "rgba(255,255,255,0.5)";
 
 export const darkBlue = "#15104a";
+export const purple = "rgb(177, 91, 192)";
+export const darkPurple = "rgb(65, 10, 73)";
 export const lightBlue = "#b1e0f0";
 export const greyShadow = "rgba(0, 0, 0, 0.2)";
 export const white = "rgb(255,255,255)";

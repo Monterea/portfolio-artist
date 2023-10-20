@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: ${palette.darkBlue};
+  background-color: ${palette.darkPurple};
 `;
 export const FooterBody = styled.div`
   display: grid;
@@ -116,41 +116,3 @@ export const H4 = styled.h4`
   padding-bottom: 20px;
 `;
 
-export const ButtonsContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  @media (max-width: 550px) {
-    height: 150px;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-export const PopupButton = styled.button`
-  background-color: ${palette.darkBlue};
-  border: none;
-  color: ${palette.whiteFull};
-  cursor: pointer;
-  height: 50px;
-  &:hover {
-    transition: 0.5s ease-in-out;
-    transform: scale(2);
-  }
-`;
-
-export const Button = styled.a`
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  height: 50px;
-  width: 150px;
-  border: 2px ${palette.darkBlue} solid;
-  border-radius: 10px;
-  background-color: ${palette.gold};
-  padding: 15px;
-  justify-items: center;
-  text-align: center;
-  cursor: pointer;
-  color: ${palette.black};
-`;

@@ -4,12 +4,9 @@ import {
   MobMenuLink,
   MobNavi,
   Hamburger,
-  BrandName,
-  BrandNameH2,
 } from "./navbarStyles";
 
 import React, { useState } from "react";
-import { FullName } from "../../assets/text/infoText";
 
 export default function MobileNav() {
   const links = [
@@ -21,29 +18,21 @@ export default function MobileNav() {
     },
     {
       id: 2,
-      path: "/skills",
-      text: "O\u00a0mě",
+      path: "/arts",
+      text: "Malby",
       name: "mobile nav info",
     },
     {
-      id: 3,
-      path: "/works",
-      text: "Projekty",
-      name: "mobile nav projects",
+      id:3,
+      path: "/graphics",
+      text: "Grafika",
+      name: "mobile nav info",
     },
   ];
   const [isNavActive, setIsNavActive] = useState(false);
   const [navbarColor, setNavbarColor] = useState(true);
 
-  /* const changeNavbarColor = () => {
-    if (window.scrollY <= 70 && isNavActive === false) {
-      setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
- */
+ 
   const activeNavbarColor = (isNavActive) => {
     if (isNavActive === true) {
       let thisNavbarColor = true;
@@ -68,9 +57,7 @@ export default function MobileNav() {
   return (
     <>
       <MobNavi name="mobile navbar" backgroundStyle={navbarColor}>
-        <BrandName name="mobile navbar brand">
-          <BrandNameH2>{FullName}</BrandNameH2>
-        </BrandName>
+        
         {isNavActive && (
           <MobMenuList>
             {links.map((link) => {

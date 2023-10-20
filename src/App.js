@@ -3,9 +3,10 @@ import React, { Suspense } from "react";
 
 import Layout from "./components/Layout";
 import Fallback from "./components/Fallback";
+import Carousel from "./components/Carousel";
 const Home = React.lazy(() => import("./components/Home"));
-const Skills = React.lazy(() => import("./components/Skills"));
-const Works = React.lazy(() => import("./components/Works"));
+const Arts = React.lazy(() => import("./components/Arts"));
+const Graphics = React.lazy(() => import("./components/Graphics"));
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/works" element={<Works />} />
+          <Route path="/arts" element={<Arts />} />
+          <Route path="/graphics" element={<Graphics />} />
+          <Route path="/carousel" element={<Carousel />} />
         </Route>
       </Routes>
     </Suspense>

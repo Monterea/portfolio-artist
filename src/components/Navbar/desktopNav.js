@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { FullName } from "../../assets/text/infoText";
 //import { NavLink } from "react-router-dom";
 import {
   Navi,
   MenuList,
   MenuItem,
   MenuLink,
-  BrandName,
-  BrandNameH2,
 } from "./navbarStyles";
 
 export default function DesktopNav() {
@@ -20,14 +17,14 @@ export default function DesktopNav() {
     },
     {
       id: 2,
-      path: "/skills",
-      text: "O\u00a0mě",
+      path: "/arts",
+      text: "Malby",
       name: "desktop nav info",
     },
     {
       id: 3,
-      path: "/works",
-      text: "Projekty",
+      path: "/graphics",
+      text: "Grafika",
       name: "desktop nav projects",
     },
   ];
@@ -45,9 +42,7 @@ export default function DesktopNav() {
             maxWidth: "1700px",
           }}
         >
-          <BrandName name="desktop navbar brand">
-            <BrandNameH2 className="cursive">{FullName}</BrandNameH2>
-          </BrandName>
+          
           <MenuList>
             {links.map((link) => {
               return (

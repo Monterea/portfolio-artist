@@ -6,7 +6,7 @@ import { RiMenuFill } from "react-icons/ri";
 //DESKTOP VERSION
 export const Navi = styled.nav`
   display: flex;
-  height: 55px;
+  height: 45px;
   width: 100%;
   margin: auto;
   position: fixed;
@@ -19,7 +19,7 @@ export const Navi = styled.nav`
 export const MenuList = styled.ul`
   list-style: none;
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
   @media (max-width: 500px) {
@@ -94,7 +94,7 @@ export const MobNavi = styled.nav`
 export const Hamburger = styled(RiMenuFill)`
   height: 50px;
   width: 50px;
-  color: ${palette.white};
+  color: ${palette.gold};
   margin-right: 10px;
   margin-top: 15px;
   margin-bottom: 15px;

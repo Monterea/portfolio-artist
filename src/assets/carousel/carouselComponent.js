@@ -55,6 +55,7 @@ export function CarouselComponent({ carousel }) {
         position: "relative",
         width: "100%",
         height: "100%",
+        backgroundImage: "none",
       }}
     >
       <CarouselBody>

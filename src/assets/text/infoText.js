@@ -1,4 +1,4 @@
-export const FullName = "Ing. Michaela Stuchlíková";
+export const FullName = "Michaela Stuchlíková";
 export const Street = "Jurkovičova 1551/4";
 export const City = "Karviná - Nové Město";
 export const PSC = "735 06";

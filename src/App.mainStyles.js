@@ -22,7 +22,7 @@ export const darkPurple = "rgb(65, 10, 73)";
 export const lightBlue = "#b1e0f0";
 export const greyShadow = "rgba(0, 0, 0, 0.2)";
 export const white = "rgb(255,255,255)";
-export const gold = "#f5a100";
+export const gold = "#ffd700";
 export const black = "rgb(0,0,0)";
 export const blueShadow = "rgba(27, 27, 94, 0.7)";
 export const darkBlueShadow = "rgba(8, 8, 29, 0.7)";
@@ -45,6 +45,10 @@ export const PageContainer = styled.div`
     background-repeat: repeat-y;
     background-size: contain;
   }
+`;
+export const CarouselPage = styled(PageContainer)`
+background-image: none;
+
 `;
 export const H2Container = styled.div`
   width: 75%;
@@ -147,7 +151,7 @@ export const H5 = styled.h5`
   padding: 5px;
   font-weight: bolder;
   color: ${black};
-  border-top: 2px solid ${darkBlue};
+  border-top: 2px solid ${darkPurple};
   @media (max-width: 1400px) {
     font-size: 21px;
   }

@@ -24,30 +24,14 @@ export const PageContainer = styled.div`
     height: 600px;
   }
 `;
-
-export const H1home = styled.h1`
-  position: absolute;
-  top: 470px;
-  width: 100%;
-  z-index: 4;
-  @media (max-width: 1200px) {
-    top: 450px;
-  }
-  @media (max-width: 920px) {
-    top: 420px;
-  }
-  @media (max-width: 770px) {
-    top: 350px;
-  }
-  @media (max-width: 500px) {
-    top: 310px;
-  }
-`;
 export const H1 = styled.h1`
   z-index: 4;
   //  font-family: "Alfa Slab One", cursive;
-  color: white;
-  text-align: center;
+color: white;
+  // color: ${palette.gold};
+  //text-align: center;
+  padding-left: 50px;
+  text-align: start;
   font-size: 6rem;
   text-shadow: 5px 5px 10px ${palette.gold};
   @media (max-width: 1240px) {
@@ -65,7 +49,24 @@ export const H1 = styled.h1`
   }
 `;
 
-
+export const H1home = styled.h1`
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  z-index: 4;
+  @media (max-width: 1200px) {
+    top: 450px;
+  }
+  @media (max-width: 920px) {
+    top: 420px;
+  }
+  @media (max-width: 770px) {
+    top: 350px;
+  }
+  @media (max-width: 500px) {
+    top: 310px;
+  }
+`;
 export const Hero = styled.div`
   height: 723px;
   width: 523px;
@@ -130,16 +131,16 @@ export const RelativeContainer = styled.div`
 `;
 export const Introduction = styled.div`
   color: ${palette.white};
-  // color: ${palette.darkBlue};
   font-size: 30px;
   width: auto;
   height: 100%;
   max-width: 800px;
+  padding-top: 100px;
   padding-right: 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a;
   //text-shadow: 2px 2px 10px ${palette.white}, 0 0 10px ${palette.white},  0 0 5px ${palette.white};

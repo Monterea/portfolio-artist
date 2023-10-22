@@ -1,16 +1,17 @@
 import React from "react";
-import { CarouselsDatabase } from "../Graphics/graphicsDatabase";
-import { CarouselComponent } from "./carouselComponent";
-import { Pleft} from "../../App.mainStyles";
+import { CarouselsDatabase } from "./graphicsDatabase";
+import { CarouselComponent } from "../../assets/carousel/carouselComponent";
+import { Pleft,H2,H2Container} from "../../App.mainStyles";
 import {
   Row,
   Delineation,
   Carousels,
   CarouselsBody,
-} from "./carouselsContainerStyles";
+} from "../../assets/carousel/carouselsContainerStyles";
 
 export function CarouselsContainer() {
   return (
+    
     <div
       name={"carousels list"}
       className="CarouselsList"
@@ -27,7 +28,9 @@ export function CarouselsContainer() {
         backgroundColor: "white",
       }}
     >
-
+   <H2Container>
+    <H2>Grafika</H2>
+  </H2Container>
       <CarouselsBody>
         {CarouselsDatabase.map((carousel, index) => {
           return (

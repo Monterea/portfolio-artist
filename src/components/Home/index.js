@@ -16,8 +16,6 @@ export default function Home() {
       <PageContainer name="home page">
         <RelativeContainer>
           <Introduction name="introduction">{ShortInfo}</Introduction>
-          
-            
               <Hero name="banner">
                 <img
                   src={hero}
@@ -26,10 +24,7 @@ export default function Home() {
                   height="100%"
                 />
               </Hero>
-            
-          
-        </RelativeContainer>
-        
+        </RelativeContainer>       
         <H1home name="name">
           <H1>{FullName}</H1>
         </H1home>

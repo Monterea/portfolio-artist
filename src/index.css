@@ -41,36 +41,36 @@ p {
   stroke: #ffffff;
 }
 .svg:hover {
-  fill: #f5a100;
-  stroke: #f5a100;
+  fill: #ffd700;
+  stroke: #ffd700;
 }
 
 
 /* a:hover > svg * { */
 svg:hover {
-  fill: #f5a100;
-  stroke: #f5a100;
+  fill: #ffd700;
+  stroke: #ffd700;
 }
 .contact {
   cursor: pointer;
 }
 .contact:hover {
   text-align: center;
-  color: #f5a100;
+  color: #ffd700;
   transition: 0.5s ease-in-out;
   transform: scale(2);
 }
 
 .selected-page {
-  background-color: #f5a100;
+  background-color: #ffd700;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: #f5a100 2px solid;
+  border: #ffd700 2px solid;
   border-radius: 10px;
 }
 .selected-page link:hover {
-  color: #15104a;
+  color: rgb(65, 10, 73);
 }
 
 @media screen and (max-width: 645px) {
@@ -98,7 +98,7 @@ svg:hover {
   opacity: 0;
   width: max-content;
   width: 140px;
-  background-color: #15104a;
+  background-color: rgb(65, 10, 73);
   color: #fff;
   text-align: center;
   border-radius: 5px;
